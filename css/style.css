@@ -12,4 +12,30 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   color: #524b6d;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vh repeat(3, min-content); }
+
+.header {
+  background-color: #43d9ec; }
+
+.realtors {
+  background-color: #ff7fff; }
+
+.features {
+  background-color: aquamarine; }
+
+.story {
+  background-color: #f1522a; }
+
+.homes {
+  background-color: #ffd27f; }
+
+.gallery {
+  background-color: #887fff; }
+
+.footer {
+  background-color: #7fff90; }
