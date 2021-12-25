@@ -19,9 +19,6 @@ body {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  .container > * {
-    padding: 40px;
-    font-weight: 3rem; }
 
 .header {
   background-color: #43d9ec;
@@ -37,10 +34,10 @@ body {
 
 .story {
   background-color: #f1522a; }
-  .story__content {
-    grid-column: full-start/col-start 4; }
   .story__pictures {
-    grid-column: col-start 5/full-end; }
+    grid-column: full-start/col-end 4; }
+  .story__content {
+    grid-column: col-start 5 / full-end; }
 
 .homes {
   background-color: #ffd27f;
