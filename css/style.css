@@ -29,8 +29,11 @@ body {
   grid-column: col-start 6/full-end; }
 
 .features {
-  background-color: aquamarine;
-  grid-column: center-start/center-end; }
+  grid-column: center-start/center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem; }
 
 .story {
   background-color: #f1522a; }
