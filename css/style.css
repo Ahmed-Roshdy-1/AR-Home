@@ -20,6 +20,17 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.header_1, .header_2, .header_3, .header_4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.header_4 {
+  font-size: 2rem; }
+  .header_4--light {
+    color: #f9f7f6; }
+  .header_4--dark {
+    color: #242d5c; }
+
 .header {
   background-color: #43d9ec;
   grid-column: full-start/col-start 6; }
@@ -32,8 +43,23 @@ body {
   grid-column: center-start/center-end;
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6rem; }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+  align-items: start; }
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.2rem;
+  column-gap: 2rem; }
+  .feature__icon {
+    fill: #0077b6;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+  .feature_text {
+    font-size: 1.7rem; }
 
 .story {
   background-color: #f1522a; }

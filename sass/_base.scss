@@ -10,10 +10,12 @@ $color-grey-light-2: #aaa;
 $color-grey-dark-1: #3a3e54;
 $color-grey-dark-2: #524b6d;
 
+// text
+$text-light: #f9f7f6;
+$text-dark: #242d5c;
 // FONT VARIABLES
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
-
 *,
 *::after,
 *::before {
@@ -43,5 +45,4 @@ body {
       1fr
     )
     [full-end];
-    
 }
