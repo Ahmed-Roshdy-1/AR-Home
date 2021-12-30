@@ -9,10 +9,20 @@
 
 .header_2 {
   @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+  &--dark {
+    color: $text-dark;
+  }
+  &--light {
+    color: $text-light;
+  }
 }
 
 .header_3 {
   @extend %heading;
+  font-size: 2.5rem;
+  color: $color-primary;
 }
 
 .header_4 {
@@ -27,3 +37,34 @@
     color: $text-dark;
   }
 }
+
+.btn {
+  background-color: $color-primary;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
+
