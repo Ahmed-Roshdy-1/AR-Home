@@ -99,19 +99,36 @@ body {
   .feature_text {
     font-size: 1.7rem; }
 
-.story {
-  background-color: #f1522a; }
-  .story__pictures {
-    grid-column: full-start/col-end 4; }
-  .story__content {
-    grid-column: col-start 5 / full-end;
-    display: grid;
-    align-content: center;
-    justify-items: start; }
-  .story__text {
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-bottom: 4rem; }
+.story__pictures {
+  grid-column: full-start/col-end 4;
+  background-image: linear-gradient(to left bottom, rgba(0, 119, 182, 0.5), rgba(2, 62, 138, 0.5)), url(../img/back.jpg);
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center; }
+
+.story__img-1 {
+  width: 100%;
+  grid-row: 2/6;
+  grid-column: 2/6; }
+
+.story__img-2 {
+  width: 115%;
+  grid-row: 4/6;
+  grid-column: 4/7; }
+
+.story__content {
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 8vw;
+  line-height: 1;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.story__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4rem; }
 
 .homes {
   background-color: #ffd27f;
