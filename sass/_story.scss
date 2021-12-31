@@ -19,12 +19,14 @@
     width: 115%;
     grid-row: 4/6;
     grid-column: 4/7;
+    z-index: 3;
   }
 
   &__content {
     grid-column: col-start 5 / full-end;
     padding: 6rem 8vw;
     line-height: 1;
+    background-color: $color-background;
     // display: flex;
     // flex-direction: column;
     // justify-content: center;

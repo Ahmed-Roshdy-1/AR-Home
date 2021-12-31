@@ -115,12 +115,14 @@ body {
 .story__img-2 {
   width: 115%;
   grid-row: 4/6;
-  grid-column: 4/7; }
+  grid-column: 4/7;
+  z-index: 3; }
 
 .story__content {
   grid-column: col-start 5 / full-end;
   padding: 6rem 8vw;
   line-height: 1;
+  background-color: #f7e9dc;
   display: grid;
   align-content: center;
   justify-items: start; }
@@ -138,7 +140,7 @@ body {
   gap: 3.5rem; }
 
 .home {
-  background-color: #e9ecef;
+  background-color: #f7e9dc;
   border-radius: 1rem;
   position: relative;
   display: grid;
