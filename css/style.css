@@ -122,7 +122,7 @@ body {
   grid-column: col-start 5 / full-end;
   padding: 6rem 8vw;
   line-height: 1;
-  background-color: #f7e9dc;
+  background-color: #f9f7f6;
   display: grid;
   align-content: center;
   justify-items: start; }
@@ -140,7 +140,7 @@ body {
   gap: 3.5rem; }
 
 .home {
-  background-color: #f7e9dc;
+  background-color: #f9f7f6;
   border-radius: 1rem;
   position: relative;
   display: grid;
