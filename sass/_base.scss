@@ -2,8 +2,8 @@
 $color-primary: #0077b6;
 $color-primary-dark: #023e8a;
 
-$color-secondary: #656d4a;
-$color-secondary-dark: #333d29;
+$color-secondary: #000;
+$color-secondary-dark: rgb(19, 17, 17);
 
 $color-grey-light-1: #ced4da;
 $color-grey-light-2: #aaa;
@@ -19,7 +19,7 @@ $text-dark: #242d5c;
 // FONT VARIABLES
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
-$font-forName:"Love Light",sans-serif;
+$font-forName: "Love Light", sans-serif;
 *,
 *::after,
 *::before {

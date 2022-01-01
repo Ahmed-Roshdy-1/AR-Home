@@ -1,4 +1,30 @@
-.header{
-    background-color: rgb(67, 217, 236);
-    grid-column: full-start/col-start 6;
+.header {
+  background-image: linear-gradient(rgba(#000, 0.9), rgba(#000, 0.9)), url(../img/hero.jpeg);
+  grid-column: full-start/col-start 6;
+  background-position: center;
+  background-size: cover;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  gap: 1.5rem;
+
+  &__logo {
+    height: 15rem;
+    justify-self: center;
+  }
+  &__btn {
+    align-self: start;
+    justify-self: start;
+    width: 25rem;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  &__seenon-logo {
+    img {
+      height: 2.5rem;
+    }
+  }
 }

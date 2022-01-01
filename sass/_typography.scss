@@ -5,6 +5,9 @@
 
 .header_1 {
   @extend %heading;
+  font-size: 4.4rem;
+  color: #fff;
+  line-height: 1;
 }
 
 .header_2 {
@@ -67,4 +70,3 @@
 .mb-hg {
   margin-bottom: 8rem;
 }
-

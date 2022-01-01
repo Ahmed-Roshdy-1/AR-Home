@@ -24,6 +24,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.header_1 {
+  font-size: 4.4rem;
+  color: #fff;
+  line-height: 1; }
+
 .header_2 {
   font-size: 4rem;
   font-style: italic; }
@@ -70,12 +75,31 @@ body {
   margin-bottom: 8rem; }
 
 .header {
-  background-color: #43d9ec;
-  grid-column: full-start/col-start 6; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/hero.jpeg);
+  grid-column: full-start/col-start 6;
+  background-position: center;
+  background-size: cover;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  gap: 1.5rem; }
+  .header__logo {
+    height: 15rem;
+    justify-self: center; }
+  .header__btn {
+    align-self: start;
+    justify-self: start;
+    width: 25rem;
+    text-align: center;
+    font-size: 1.7rem; }
+  .header__seenon-logo img {
+    height: 2.5rem; }
 
 .realtors {
-  background-color: #ff7fff;
-  grid-column: col-start 6/full-end; }
+  background-color: #131111;
+  grid-column: col-start 6 / full-end; }
 
 .features {
   grid-column: center-start/center-end;
@@ -174,7 +198,7 @@ body {
     font-size: 1.6rem;
     text-align: center;
     padding: 1.25rem;
-    background-color: #656d4a;
+    background-color: #000;
     color: #fff;
     font-weight: 400;
     transform: translateY(50%); }
@@ -250,7 +274,7 @@ body {
     display: block; }
 
 .footer {
-  background-color: #333d29;
+  background-color: #131111;
   grid-column: full-start/full-end;
   padding: 15rem; }
 
