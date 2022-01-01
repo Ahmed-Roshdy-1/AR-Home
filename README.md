@@ -1,2 +1,2 @@
 # AR-Home
- It is a website that you can choose house and furniture
+## It is a website for selling house and furniture
