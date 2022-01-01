@@ -24,7 +24,8 @@ $font-forName: "Love Light", sans-serif;
 // Responsive BreakPoints
 $bp-largest: 75em;
 $bp-large: 62.5em;
-$bp-largest: 75em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
 
 *,
 *::after,
@@ -58,4 +59,8 @@ body {
       1fr
     )
     [full-end];
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-rows: 100vh;
+  }
 }

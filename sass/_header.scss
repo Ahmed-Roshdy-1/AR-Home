@@ -11,6 +11,14 @@
   row-gap: 1.5rem;
   justify-content: center;
 
+  @media screen and (max-width: $bp-medium) {
+    grid-column: 1 /-1;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    padding: 4.5rem;
+  }
+
   &__logo {
     height: 15rem;
     justify-self: center;
