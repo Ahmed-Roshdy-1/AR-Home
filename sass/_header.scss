@@ -3,7 +3,6 @@
   grid-column: full-start/col-start 7;
   background-position: center;
   background-size: cover;
-
   padding: 7rem;
   padding-top: 4rem;
   display: grid;
@@ -23,12 +22,34 @@
     height: 6rem;
     text-align: center;
     font-size: 1.7rem;
-    opacity: 0.5;
+    background: transparent;
+    border: 1px solid $color-primary;
+  }
+  &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    align-items: center;
+    color: $color-grey-light-2;
+    font-size: 1.5rem;
+
+    &::after,
+    &::before {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
   }
 
   &__seenon-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 1.5rem;
     img {
       height: 2.5rem;
+      filter: brightness(70%);
     }
   }
 }

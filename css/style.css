@@ -25,9 +25,10 @@ body {
   font-weight: 400; }
 
 .header_1 {
-  font-size: 4.4rem;
+  font-size: 4.5rem;
   color: #fff;
-  line-height: 1; }
+  line-height: 1;
+  font-family: "Nunito", sans-serif; }
 
 .header_2 {
   font-size: 4rem;
@@ -38,8 +39,9 @@ body {
     color: #f9f7f6; }
 
 .header_3 {
-  font-size: 2.5rem;
-  color: #0077b6; }
+  font-size: 4.5rem;
+  color: #0077b6;
+  font-family: "Love Light", sans-serif; }
 
 .header_4 {
   font-size: 2rem; }
@@ -96,9 +98,28 @@ body {
     height: 6rem;
     text-align: center;
     font-size: 1.7rem;
-    opacity: 0.5; }
-  .header__seenon-logo img {
-    height: 2.5rem; }
+    background: transparent;
+    border: 1px solid #0077b6; }
+  .header__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    align-items: center;
+    color: #aaa;
+    font-size: 1.5rem; }
+    .header__seenon-text::after, .header__seenon-text::before {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
+  .header__seenon-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 1.5rem; }
+    .header__seenon-logo img {
+      height: 2.5rem;
+      filter: brightness(70%); }
 
 .realtors {
   background-color: #000;
