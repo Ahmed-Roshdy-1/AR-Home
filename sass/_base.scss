@@ -20,6 +20,12 @@ $text-dark: #242d5c;
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 $font-forName: "Love Light", sans-serif;
+
+// Responsive BreakPoints
+$bp-largest: 75em;
+$bp-large: 62.5em;
+$bp-largest: 75em;
+
 *,
 *::after,
 *::before {
@@ -31,6 +37,9 @@ $font-forName: "Love Light", sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  @media screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
 }
 
 body {
