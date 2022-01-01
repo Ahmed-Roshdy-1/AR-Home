@@ -2,4 +2,24 @@
   background-color: $color-secondary-dark;
   grid-column: col-start 7 / full-end;
   padding: 3rem;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  &__img {
+    width: 7rem;
+    border-radius: 50%;
+    display: block;
+  }
+  &__so {
+    margin-top: -3px;
+  }
 }

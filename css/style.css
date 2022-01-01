@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #524b6d;
+  color: #9d9ca1;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -124,7 +124,21 @@ body {
 .realtors {
   background-color: #000;
   grid-column: col-start 7 / full-end;
-  padding: 3rem; }
+  padding: 3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  .realtors__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 2rem;
+    align-items: center; }
+  .realtors__img {
+    width: 7rem;
+    border-radius: 50%;
+    display: block; }
+  .realtors__so {
+    margin-top: -3px; }
 
 .features {
   grid-column: center-start/center-end;
