@@ -75,16 +75,17 @@ body {
   margin-bottom: 8rem; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/hero.jpeg);
-  grid-column: full-start/col-start 6;
+  background-image: url(../img/hero.jpg);
+  grid-column: full-start/col-start 7;
   background-position: center;
   background-size: cover;
-  padding: 8rem;
+  padding: 7rem;
   padding-top: 4rem;
   display: grid;
   grid-template-rows: 1fr min-content 6rem 1fr;
   grid-template-columns: max-content;
-  gap: 1.5rem; }
+  row-gap: 1.5rem;
+  justify-content: center; }
   .header__logo {
     height: 15rem;
     justify-self: center; }
@@ -92,14 +93,17 @@ body {
     align-self: start;
     justify-self: start;
     width: 25rem;
+    height: 6rem;
     text-align: center;
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    opacity: 0.5; }
   .header__seenon-logo img {
     height: 2.5rem; }
 
 .realtors {
-  background-color: #131111;
-  grid-column: col-start 6 / full-end; }
+  background-color: #000;
+  grid-column: col-start 7 / full-end;
+  padding: 3rem; }
 
 .features {
   grid-column: center-start/center-end;
@@ -274,7 +278,7 @@ body {
     display: block; }
 
 .footer {
-  background-color: #131111;
+  background-color: #000;
   grid-column: full-start/full-end;
   padding: 15rem; }
 
