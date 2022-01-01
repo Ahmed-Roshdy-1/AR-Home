@@ -26,6 +26,29 @@ body {
     .container {
       grid-template-rows: 100vh; } }
 
+/* Scrolling */
+/* width */
+::-webkit-scrollbar {
+  width: 0.7rem; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0077b6;
+  border-radius: 1rem; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #023e8a; }
+
+@media (max-width: 1450px) {
+  ::-webkit-scrollbar {
+    width: 0px; } }
+
+/* End of Scrolling */
 .header_1, .header_2, .header_3, .header_4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
