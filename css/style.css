@@ -250,5 +250,38 @@ body {
     display: block; }
 
 .footer {
-  background-color: #7fff90;
-  grid-column: full-start/full-end; }
+  background-color: #333d29;
+  grid-column: full-start/full-end;
+  padding: 15rem; }
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem; }
+  .nav__item {
+    list-style: none; }
+  .nav__link:visited, .nav__link:link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    transition: all 0.4s; }
+  .nav__link:hover {
+    background-color: rgba(145, 145, 138, 0.315);
+    transform: translateY(-3px); }
+
+.copyright {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  padding-top: 8rem;
+  text-align: center; }
+  .copyright span {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Love Light", sans-serif;
+    text-align: center; }
